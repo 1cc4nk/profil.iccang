@@ -1,0 +1,63 @@
+body {
+  background-color: #ffffff; /* Latar belakang putih untuk tampilan bersih */
+  color: #d6deeb; /* Teks abu gelap untuk kontras yang elegan */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font modern dan mudah dibaca */
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  justify-content: center; /* Memusatkan konten secara horizontal */
+  align-items: center; /* Memusatkan konten secara vertikal */
+  min-height: 75px; /* Memastikan tinggi minimal 100% dari viewport */
+  padding: 1rem; /* Memberikan padding di sekitar konten */
+}
+
+/* Tetap sama */
+.video-background {
+  position: absolute; /* Memposisikan video di belakang konten */
+  top: 0; left: 0; /* Menempatkan video di sudut kiri atas */
+  width: 100%; height: 100%; /* Memastikan video menutupi seluruh area */
+  object-fit: cover; /* Memastikan video tidak terdistorsi */
+  z-index: 1; /* Menempatkan video di belakang konten */
+  opacity: 0.15; /* Memberikan efek transparansi pada video */
+}
+
+.content {
+  position: relative; /* Memastikan konten berada di atas video */
+  z-index: 2; /* Menempatkan konten di atas video */
+  padding: 1.5rem; /* Memberikan ruang di sekitar konten */
+  text-align: center; /* Memusatkan teks di dalam konten */
+}
+
+.profile-img {
+  width: 120px; /* Ukuran tetap untuk gambar profil */
+  height: 120px; /* Ukuran tetap untuk gambar profil */
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+  border: 4px solid rgba(255, 255, 255, 0.1); /* Border halus untuk gambar profil */
+  border-radius: 9999px; /* Membuat gambar profil berbentuk bulat */
+  background: linear-gradient(135deg, #1f2937, #111827); /* Gradien latar belakang untuk efek visual */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Bayangan untuk memberikan kedalaman */
+}
+
+.social-icon {
+  width: 36px; /* Ukuran tetap untuk ikon sosial */
+  height: 36px; /* Ukuran tetap untuk ikon sosial */
+  display: flex; /* Menggunakan flexbox untuk tata letak ikon */
+  align-items: center; /* Memusatkan ikon secara vertikal */
+  justify-content: center; /* Memusatkan ikon secara horizontal */
+  border-radius: 9999px; /* Membuat ikon berbentuk bulat */
+  color: white; /* Warna teks putih untuk kontras */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transisi halus untuk efek hover */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Memperbesar ikon saat hover untuk efek interaktif */
+}
+
+.facebook { background-color: #1877f2; } /* Warna khas Facebook untuk ikon */
+.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); } /* Gradien warna Instagram */
+.tiktok { background-color: #010101; } /* Warna hitam untuk ikon TikTok */
+.youtube { background-color: #ff0000; } /* Warna merah untuk ikon YouTube */
+.spotify { background-color: #1DB954; } /* Warna hijau untuk ikon Spotify */
+.nintendo { background: linear-gradient(135deg, #e60012, #8a000a); } /* Gradien warna Nintendo */
+
+html, body {
+  overflow: hidden;
+}
